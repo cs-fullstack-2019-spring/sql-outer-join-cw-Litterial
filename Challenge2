@@ -1,0 +1,7 @@
+-- Create a join that only lists employees assigned to an apartment who also have a company laptop assigned
+-- find laptop types that are not null
+
+select employee_name,department_name,laptop_type from employees
+inner join departments
+on departments.department_id=employees.department_id
+where laptop_type notnull ;

@@ -1,0 +1,6 @@
+-- ### Exercise 3:
+-- Create a Join that lists all Departments and the Employees
+-- right outer join list all the elements on the right (second) table
+select employee_name,department_name from departments
+right outer join employees
+on departments.department_id=employees.department_id;

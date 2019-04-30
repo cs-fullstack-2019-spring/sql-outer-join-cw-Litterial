@@ -1,0 +1,7 @@
+-- ### Exercise 1:
+-- Create a Join that lists all Employees and their departments
+-- left outer join will include all of the of the elements of the left(first) table
+
+select employee_name,department_name from employees
+left outer join departments
+on departments.department_id=employees.department_id;

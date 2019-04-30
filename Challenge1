@@ -1,0 +1,8 @@
+-- ### Challenges
+-- Create a Join that lists the number of employees per department
+-- use count for employee name
+select department_name,count(employee_name) as Employee_Count from departments
+inner join employees
+on departments.department_id=employees.department_id
+group by department_name
+order by department_name asc;

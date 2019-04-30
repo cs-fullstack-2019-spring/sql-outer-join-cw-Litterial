@@ -1,0 +1,6 @@
+-- ### Exercise 2:
+-- Create a Join that lists ONLY Employees assigned to a department
+--
+select employee_name,department_name from employees
+inner join departments
+on departments.department_id=employees.department_id;
